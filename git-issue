@@ -1,0 +1,3 @@
+We had issue on VSTS git repo in Debian OS. Error as Fatal authentication failed.
+Later 7.52.1-5 installed curl and libcurl version. Issue resloved.
+Script permissin exec denied noexec on /tmp FS.
