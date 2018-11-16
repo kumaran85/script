@@ -1,39 +1,9 @@
-<dependencyManagement>
-        <dependencies>
-           <dependency>
-              <groupId>javax.inject</groupId>
-                     <artifactId>javax.inject</artifactId>
-                     <version>1</version>
-           </dependency>
-  </dependencies>
-  </dependencyManagement>
-
-  <build>
-       <plugins>
-              <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-war-plugin</artifactId>
-                     <version> 3.0.0</version><!--$NO-MVN-MAN-VER$-->
-                     </plugin>
-              <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-compiler-plugin</artifactId>
-                     <version>3.1</version><!--$NO-MVN-MAN-VER$-->
-              </plugin><!--$NO-MVN-MAN-VER$-->
-              <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-resources-plugin</artifactId>
-                     <version>3.0.2</version><!--$NO-MVN-MAN-VER$-->
-              </plugin><!--$NO-MVN-MAN-VER$-->
-       </plugins>
-  </build>
-</project>
-
-From: Vinupriya Balasubramanian (CIS) 
-Sent: Friday, November 16, 2018 8:14 PM
-To: Vinupriya Balasubramanian (CIS) <vinupriya.balasubramanian1@wipro.com>
-Subject: RE: POM File
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.codebind</groupId>
+  <artifactId>mavenone</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging> war </packaging>
 <dependencyManagement>
         <dependencies>
            <dependency>
