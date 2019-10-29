@@ -1,0 +1,149 @@
+
+print('This is value')
+print("This is value")
+sprice = 10
+print (sprice)
+
+######
+To convert string into either int or float
+when print use str(value) to store #val = "This is output" + str(value)
+print("I got " + str(point_total) + " points!" )
+cal = 10 - int(sprice)
+cal = 10 + float(sprice)
+print (type(cal))
+##############
+course = ''' This is the 
+Linux server 
+For All platforms'''
+print (course)
+var1 = 'Python for all'
+print (course[0]) #prints P as 0 
+print (course[-1]) # it prints from last 	
+
+print (course[0:3]) #it prints from 012 chars 
+print (course[:3]) #it assumes  from 0 to 3
+print (course[1:-1])
+print (len(course))
+print (course.lower())
+print (course.upper())
+print ('Python' in var1) # this is boolean expression and prints True.
+############
+Esacaping chars
+'This isn\'t flying, this is falling with style!' #Add back slash to avoid syntax error.
+To print index fifth_letter = "MONTY"[4] 
+########
+Arithmatic operation
+ x = 3
+ x += 4 # It adds 4 and strores into x.
+
+###################
+datetime 
+
+from datetime import datetime 
+
+wel = datetime.now()
+crt_year = wel.year
+crt_mont = wel.month
+crt_day = wel.day
+print ('%02d/%02d/%04d') % (wel.month,wel.day,wel.year)
+
+from datetime import datetime
+now = datetime.now()
+print(now)
+print '%02d/%02d/%04d %02d:%02d:%04d' % (now.month,now.day,now.year,now.hour, now.minute, now.second)
+print "%d to the power of %d is %d." % (base, exponent, result)
+####################
+
+not is evaluated first;
+and is evaluated next;
+or is evaluated last
+############################################
+
+Unlike if, else doesn’t depend on an expression
+
+##################################################
+print "%d squared is %d." % (n, squared)
+
+###################
+from math import *
+
+To print maximum value. value=(2,10,8) print max(value) like that min 
+And absolute is abs(value). it will change negative value to positve value.
+#######################################
+
+def hotel_cost(nights):
+  return 140 * nights
+
+def plane_ride_cost(city):
+  if city == "Charlotte":
+    return 183
+  elif city == "Tampa":
+    return 220
+  elif city == "Pittsburgh":
+    return 222
+  elif city == "Los Angeles":
+    return 475
+
+def rental_car_cost(days):
+  cost = days * 40
+  if days >= 7:
+    cost -= 50
+  elif days >= 3:
+    cost -= 20
+  return cost
+
+def trip_cost(city,days,spending_money):
+  return rental_car_cost(days) +  hotel_cost(days -1) + plane_ride_cost(city) + spending_money
+print trip_cost("Los Angeles",5,600)
+trip_cost(["welcome", "age" , "anand"]) Giving lists as input in  dict
+###################################
+
+suitcase.append("Laser") To append values into lists, Adding values into list in the end.
+To insert values into desired level use suitcase.insert(1, "welcome") #Replacing 1st index 
+to take out values from Lists suitcase[0:2]
+suitcase[2:4] takes out third value and fourth value.
+from 6th chars to last suticase[6:]
+
+#####################
+animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+duck_index = animals.index("duck")
+print duck_index 
+# Your code here!
+animals.remove("duck") # To remove from Lists 
+animals.insert(duck_index,"cobra")
+print animals
+
+animals.sort()
+########################
+Dictionary del zoo_animals['Unicorn']
+zoo_animals['Unicorn'] = " Bike"
+######################
+inventory = {
+  'gold' : 500,
+  'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+
+# Your code here
+inventory['pocket'] = ['seashell','strange berry','lint']
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold'] = 550
+###########################
+dict = { "name": "tis is my name",
+         "age": " my age is 25",
+}
+for nam in dict:
+   print dict[name]
+###########
+creating empty values in dict is []
+######################
+To combine dict into list just listname=[dict1,dict2]
+To take out key value after this just use for loop then print student["name"] print student["department"]
+
